@@ -97,7 +97,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h2>Our owen Authentication</h2>
         <h3>Name : {user.name}</h3>
         <h5>Email : {user.email}</h5>
@@ -113,7 +113,7 @@ function App() {
           <br />
           <input type="text" name='email' onBlur={handleBlur}  placeholder='email' /><br />
           <input type="password" name='password' onBlur={handleBlur}  placeholder='password' /><br />
-          <input type="submit" value={newUser ? 'Sign Up' : 'Sign in'} /><br /><br />
+          <input className='btn' type="submit" value={newUser ? 'Sign Up' : 'Sign in'} /><br /><br />
         </form>
       
         <p style={{color: "red"}}>{user.error}</p>
